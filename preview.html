@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ULTRA SUPER SITE</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080812;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #101020;
+    border-bottom: 1px solid #29294a;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 900;
+    color: #00eaff;
+    text-shadow: 0 0 15px #00eaff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00eaff;
+}
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background:
+    radial-gradient(circle at center, #17174c, #080812 70%);
+}
+
+.hero h1 {
+    font-size: clamp(40px, 8vw, 85px);
+    font-weight: 900;
+    background: linear-gradient(90deg, #00eaff, #9b5cff);
+    color: transparent;
+    background-clip: text;
+    animation: glow 3s infinite alternate;
+}
+
+.hero p {
+    color: #aaa;
+    margin: 20px;
+    font-size: 18px;
+}
+
+button {
+    background: linear-gradient(90deg, #00cfff, #854dff);
+    border: none;
+    color: white;
+    padding: 16px 35px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px #00cfff;
+}
+
+section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #151529;
+    padding: 35px 20px;
+    border: 1px solid #30305b;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #00eaff;
+    box-shadow: 0 0 25px #00eaff33;
+}
+
+.card h3 {
+    color: #00eaff;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #aaa;
+    line-height: 1.6;
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background: #101020;
+    color: #777;
+}
+
+@keyframes glow {
+    from { filter: drop-shadow(0 0 5px #00eaff); }
+    to { filter: drop-shadow(0 0 25px #854dff); }
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">ULTRA 67</div>
+
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#about">О сайте</a>
+        <a href="#projects">Проекты</a>
+    </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+    <h1>ULTRA SUPER SITE</h1>
+    <p>Добро пожаловать в мою цифровую вселенную 🚀</p>
+    <button onclick="welcome()">НАЖМИ МЕНЯ</button>
+</section>
+
+<section id="about">
+    <h2>ОБО МНЕ</h2>
+    <p>Это мой собственный сайт, созданный с помощью HTML, CSS и JavaScript.</p>
+</section>
+
+<section id="projects">
+    <h2>МОИ ПРОЕКТЫ</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🎮 GAMING</h3>
+            <p>Мой игровой мир и любимые игры.</p>
+        </div>
+
+        <div class="card">
+            <h3>💻 CODING</h3>
+            <p>Программирование и разработка.</p>
+        </div>
+
+        <div class="card">
+            <h3>🔥 MEMES</h3>
+            <p>Мемы, приколы и интернет-культура.</p>
+        </div>
+
+    </div>
+</section>
+</main>
+
+<footer>
+    © 2026 ULTRA SUPER SITE | POWERED BY 67
+</footer>
+
+<script>
+function welcome() {
+    alert("ОКАК 67 💀🔥 ДОБРО ПОЖАЛОВАТЬ!");
+}
+</script>
+
+</body>
+</html>
